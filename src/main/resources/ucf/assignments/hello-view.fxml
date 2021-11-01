@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox layoutX="3.0" prefHeight="213.0" prefWidth="592.0">
+            <children>
+                <VBox prefHeight="190.0" prefWidth="160.0">
+                    <children>
+                        <Label text="Add or Remove List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <TextField promptText="Title of List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="Add New List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                        <TextField promptText="Name of List To be Removed">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="Remove">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox prefHeight="216.0" prefWidth="111.0">
+                    <children>
+                        <Label text="Add or Remove Item">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Select List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox minHeight="30.0" prefHeight="30.0" prefWidth="100.0" />
+                        <TextField promptText="Name Of Item">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="Add">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Remove">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox prefHeight="208.0" prefWidth="138.0">
+                    <children>
+                        <Label text="Edit List Or Item">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Select List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox maxHeight="50.0" minHeight="-Infinity" minWidth="50.0" prefHeight="30.0" prefWidth="100.0" />
+                        <Label maxHeight="30.0" prefHeight="30.0" text="Select Item if Applicable">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="100.0" />
+                        <Label text="Select Fied to be Modified">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox minHeight="30.0" prefHeight="30.0" prefWidth="100.0" />
+                        <TextField promptText="Enter New Value">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="Apply Changes">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox prefHeight="202.0" prefWidth="102.0">
+                    <children>
+                        <Label text="Show List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Select List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox minHeight="30.0" prefHeight="30.0" prefWidth="100.0" />
+                        <Label text="Filters">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox minHeight="30.0" prefHeight="30.0" prefWidth="100.0" />
+                        <Button mnemonicParsing="false" text="Show Items">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Import/Export">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Select List">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <ChoiceBox maxHeight="30.0" minHeight="30.0" prefWidth="100.0" />
+                        <Button mnemonicParsing="false" text="Export">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                        <TextField promptText="Enter Name of File">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="Import">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <ListView layoutX="6.0" layoutY="227.0" prefHeight="159.0" prefWidth="351.0" />
+        <Label layoutX="79.0" layoutY="295.0" text="List Will Be scrolled through here">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="366.0" layoutY="287.0" text="Errors Displayed Here" />
+    </children>
+</AnchorPane>
